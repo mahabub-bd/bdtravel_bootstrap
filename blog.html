@@ -98,7 +98,7 @@
                     <ul class="navbar-nav ">
                         <li class="nav-item">
                             <button class="nav-btn btn btn-success btn-sm border-white" data-bs-toggle="modal"
-                            data-bs-target="#login" href="login.html">Login</button>
+                                data-bs-target="#login" href="login.html">Login</button>
 
                         </li>
 
@@ -111,8 +111,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header ">
@@ -137,8 +136,8 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label ms-3 me-5" for="exampleCheck1">Check me out</label>
 
-                            <a class=" ps-5 link-success" href=""data-bs-target="#forgetpassword" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">Forget Password</a>
+                            <a class=" ps-5 link-success" href="" data-bs-target="#forgetpassword"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Forget Password</a>
                         </div>
                         <button type="submit" class="btn btn-sm btn-success">Login</button>
                     </form>
@@ -150,8 +149,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-        tabindex="-1">
+    <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -165,6 +163,12 @@
                             <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="exampleInputphone1" class="form-label">Mobile Number</label>
+
+                            <input type="text" class="form-control form-control-sm" id="exampleInputphone1">
+
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1 " class="form-label">Password</label>
@@ -188,41 +192,41 @@
             </div>
         </div>
     </div>
-    
-<!-- Forget Password -->
+
+    <!-- Forget Password -->
 
     <div class="modal fade" id="forgetpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-    tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header ">
-                <h5 class="modal-title" id="exampleModalToggleLabel2">Reset Password</h5>
-                
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-5">
-                <h6>Enter your email and a reset link will be sent you</h6>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    
-                    
-                    
-                    <button type="submit" class="btn btn-sm btn-success">Reset Password</button>
-                    
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-success btn-sm" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                    data-bs-dismiss="modal">Back to Login</button>
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Reset Password</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <h6>Enter your email and a reset link will be sent you</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-sm btn-success">Reset Password</button>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to Login</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <!-- -----------------------Header End-------------------- -->
 
 
@@ -239,7 +243,7 @@
 
     <section class="container">
         <div class="row g-5 ">
-            <div class="col-md-9">
+            <div class="col-xl-8" >
                 <div class="item ps-lg-5 ps-md-1 py-5">
                     <img src="images/Tajmohol.jpg" alt="">
                     <h1 class="text-dark-50 my-3 display-6 text-muted">Agra Tajmohol, India</h1>
@@ -306,25 +310,117 @@
                     <p class="border border-1 d-inline pe-5 py-1  ps-3 rounded-1 ">Continue reading............</p>
                 </div>
             </div>
-            <div class="col-md-3 py-5">
-                <div class="about-me">
-                    <h3 class="title-sidebar">About Me</h3>
+
+            <!-- Side Bar -->
+            <div class="col-xl-4 col-md-8 py-5">
+                <div class="side-bar">
+                    <div class="about-me side-item mb-5">
+                        <div class="title-sidebar d-flex flex-column  justify-content-sm-around align-items-sm-around">
+                            <h6 class="lead text-dark">About Me</h6>
+
+                            <div class="d-flex justify-content-center">
+                                <img class="" src="images/Profile.jpg" alt="" />
+                            </div>
+                            <div class="profile-name ">
+                                <h5 class="text-center lead text-dark my-3">Esther Howard</h5>
+                            </div>
+
+                            <div class="profile-description ">
+                                <p class="f-6 text-justify lh-">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                                    aliquam, purus sit amet
+                                </p>
+                            </div>
+                            <div class="profile-social-link d-flex justify-content-around p-2 px-5 mx-5 ">
+                                <a class="social border border-1 border-success p-2 rounded-circle text-success"><i class="fab fa-facebook "></i></a>
+                                <a class="social border border-1 border-success p-2 rounded-circle text-success"><i class="fab fa-twitter"></i></a>
+                                <a class="social border border-1 border-success p-2 rounded-circle text-success"><i class="fab fa-instagram"></i></a>
+                                <a class="social border border-1 border-success p-2 rounded-circle text-success"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter side-item py-5">
+                        <div class="title-sidebar">
+                            <h6 class="lead text-dark">Newsletter</h6>
+                            <div class="newsletter-description">
+                                <p class="lh-sm">
+                                    Get all latest content delivered to your email a few times a
+                                    month.
+                                </p>
+                            </div>
+                            <div class="newsletter-form border-1 border p-1 d-flex justify-content-between">
+                                <input class="form-control-sm border-0" type="text" value="Enter Your Email Address">
+                                <button class="btn btn-success btn-sm ">Go</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-post side-item py-5">
+                        <div class="title-sidebar">
+                            <h6 class="lead text-dark"> Recent Post</h6>
+                            <div class="recent-post-item  py-3 d-sm-flex justify-content-between">
+                                <div class="recent-image">
+                                    <img src="images/Recent-thm-1.jpg" alt="" />
+                                </div>
+
+                                <div class="recent-post-description me-5">
+                                    <h6 class="lead text-dark">Sundarban, Bangladesh</h6>
+                                    
+                                        <p class="f-6">21, April 2021</p>
+                                        
+                                        
+                                    
+                                </div>
+                            </div>
+                            <div class="recent-post-item py-3 d-sm-flex justify-content-between">
+                                <div class="recent-image">
+                                    <img src="images/coxbazar-th.jpg" alt="" />
+                                </div>
+
+                                <div class="recent-post-description me-5">
+                                    <h6 class="lead text-dark">Cox’s Bazar, Bangladesh</h6>
+                                    
+                                        <p>21, April 2021</p>
+                                      
+                                    
+                                </div>
+                            </div>
+                            <div class="recent-post-item py-3 d-sm-flex justify-content-between">
+                                <div class="recent-image">
+                                    <img src="images/rangamati.jpg" alt="" />
+                                </div>
+
+                                <div class="recent-post-description me-5">
+                                    <h6 class="lead text-dark">Rangamati, Bangladesh</h6>
+                                    
+                                        <p>21, April 2021</p>
+                                       
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-       <div class="row">
-           <div class="col-12 d-flex justify-content-center ">
-            
+
+        <!-- Pagination -->
+        <div class="row">
+
+
+            <div class="col-12 d-flex justify-content-center ">
+
                 <ul class="pagination  pagination-sm">
-                  <li class="page-item active" aria-current="page">
-                    <span class="page-link">1</span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
                 </ul>
-            
-           </div>
-       </div>
+
+            </div>
+            <!-- Pagination -->
+        </div>
     </section>
 
     <!-- Footer Start -->
