@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- -----------------------Header Start-------------------- -->
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top d-sm-inline">
+
+            <div class="container ">
+                <div class="brand  d-flex align-items-center mx-auto">
+                    <i class=" text-white fas fa-globe fa-3x "></i>
+                    <a class="navbar-brand ms-sm-5" href="index.html">BDTRAVEL</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav mx-auto  ">
+                        <li class="nav-item ">
+                            <a class="nav-link  mx-md-2 " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link mx-md-2 " href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link mx-md-2 active " href="article.html">Article</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link mx-md-2" href="">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link mx-md-2" href="">Author</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link mx-md-2" href="contact.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+
+                    <ul class="navbar-nav me-5  float-sm-start">
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-facebook"></i></a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-twitter"></i></a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-google"></i></a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-linkedin"></i></a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-youtube"></i></a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-instagram"></i></a>
+
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href=""><i class="fab fa-pinterest"></i></a>
+
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav me-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link mx-md-1" href=""><i class="fa fa-search"></i></a>
+
+                        </li>
+
+
+                    </ul>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <button class="nav-btn btn btn-success btn-sm border-white" data-bs-toggle="modal"
+                                data-bs-target="#login" href="login.html">Login</button>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalToggleLabel">Login to BDTRAVEL</h5>
+
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label ms-3 me-5" for="exampleCheck1">Check me out</label>
+
+                            <a class=" ps-5 link-success" href="" data-bs-target="#forgetpassword"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Forget Password</a>
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-success">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-success" data-bs-target="#signup" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Sign Up to BDTRAVEL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="exampleInputphone1" class="form-label">Mobile Number</label>
+
+                            <input type="text" class="form-control form-control-sm" id="exampleInputphone1">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1 " class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> Retype Password</label>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I Agree To The Terms & Condition</label>
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-success">Join</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm" data-bs-target="#login" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forget Password -->
+
+    <div class="modal fade" id="forgetpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Reset Password</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <h6>Enter your email and a reset link will be sent you</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-sm btn-success">Reset Password</button>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-sm" data-bs-target="#login" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------Header End-------------------- -->
+
+
+    <!-- Page Title Bar -->
+    <div class="page-title-bar bg-light">
+        <div class="container text-black-50 d-flex  py-2">
+            <i class="fas fa-home me-3 "></i>
+            <i class="fas fa-greater-than me-3 "></i>
+            <h3 class="text-bold">ARTICLE</h3>
+        </div>
+    </div>
+
+    <!-- Blog section -->
+
+     <!-- Article Start -->
+
+     <div class="container ">
+        <div class="row ">
+            
+            <div class="col-10 py-2 mx-auto">
+                <h1 class="title text-center">Rangamati</h1>
+                <img class="img-fluid" src="https://source.unsplash.com/random "alt="" />
+                <p class="py-4">
+                    Rangamati is the largest district and beauty queen of Bangladesh. There are many tribal communities, among them, chakma is seen everywhere. Not only that there are many uncomparable tourist spots in Rangamati including Hanging Bridge, Kaptai Lake, Sajek Valley, Paulwell Park, Subolong Spring and so on which will make your holiday more colorful. Every place is distinguished with its own majesty. All kinds of astonishment are gathered in this district. If you want to make a tour in Rangamati, you will have a whole package of tour ingredients here. You can rely on that won’t be disappointed by visiting Rangamati.
+                </p>
+            </div>
+
+            <div class="col-10 py-2 mx-auto">
+                <h1 class="title text-center">Sajek Valley</h1>
+                <img class="img-fluid" src="images/sajek.jpg" alt="" />
+                <p class="py-4">
+                    Sajek valley is famous as a tourist spot for its beautiful environment clasped by mountains with deep forest. It is located at Baghaichhari Upazila in Rangamati District and many rivers including Mayni river is flown by its side. Many tribal communities like Chakma, Marma, Tripura, Lushai, Pankua, and Sagma live here. If you want to observe the elegant charm of the dense mountain life then you will be well-received by the nature of Sajek Valley.
+                </p>
+            </div>
+
+            <div class="col-10 py-2 mx-auto">
+                <h1 class="title text-center">Nilachol</h1>
+                <img class="img-fluid" src="https://source.unsplash.com/random/2"alt="" />
+                <p class="py-4">
+                    Nilachol is an amazing tourist spot, situated in Tigerpara, Bandarban. It is about 2000 feet above from the sea level where you can find the whole view of Bandarban at a glance. This area is called the heaven of Bangladesh because you touch the cloud by climbing up Nilachol. Not only that the rainy season, fogs of winter, moonlit night, view of sunrise and sunset everything is so fantastic here. If you visit this place once, your mind doesn’t want to back his busy life. So, it’s a highly recommended place for making an enjoyable tour.
+                </p>
+            </div>
+            <div class="col-10 py-2 mx-auto">
+                <h1 class="title text-center">Patenga</h1>
+                <img class="img-fluid" src="images/patenga.jpg" alt="" />
+                <p class="py-4">
+                    Patenga is one of the most attractive beaches of Bangladesh,
+                    situated in Chattogram. It is located 14 km from the city and river
+                    Karnaphuli is flown by its side. It is one of the prodigious beaches
+                    for the beauty lover who loves to watch the sunset scene. The shore
+                    of the sea is bound by stones to confine erosion. The area is
+                    enclosed by tight security so that visitors can move safely. Tourist
+                    comes here generally early in the morning to observe the sunrise and
+                    end of the day to watch the sunset. Ergo, if you are a true visitor,
+                    you should come here once.
+                </p>
+            </div>
+            <div class="col-10 py-2 mx-auto">
+                <h1 class="title text-center">Kuakata</h1>
+                <img class="img-fluid" src="images/Kuakata.jpg" alt="" />
+                <p class="py-4">
+                    Kuakata is a panoramic sea beach which is known as Sagar Kannya
+                    locally. It’s an 18 km long sea beach situated at Potuakhali
+                    District. From here one can enjoy the unbridled beauty of the
+                    sunrise and sunset of the Bay of Bengal. This beach is an amazing
+                    mixture of vivid natural beauty, blue sky, sandy land and evergreen
+                    forest that will give you a great feeling of heaven. The fishing
+                    community, the large bazaar of dried fish, dense forest of shegun
+                    and a harborage of migratory birds make this beach the most unique
+                    beach in the world. So, you must have to visit this place.
+                </p>
+            </div>
+        </div>
+    </div>
+        <!-- Article End -->
+
+    <!-- Pagination -->
+   
+
+
+        
+
+           <div class="d-flex justify-content-center">
+            <ul class="pagination  pagination-sm">
+                <li class="page-item"><a class="page-link" href="article.html">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">2</span>
+                </li>
+
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+           </div>
+
+       
+    
+        <!-- Pagination -->
+    
+
+    
+
+    <!-- Footer Start -->
+
+    <div class="container-fluid bg-dark d-flex flex-column align-items-center text-white">
+        <div class="brand  d-inline-flex align-items-center border border-light mx-auto p-2 my-4">
+            <i class=" text-white fas fa-globe fa-3x"></i>
+            <a class="navbar-brand ms-5 text-white" href="#">BDTRAVEL</a>
+        </div>
+        <p>Subscribe to our newsletter</p>
+
+        <div class="input border border-1 border-white rounded  d-flex justify-content-between align-items-center ">
+            <input class="form-control border-0 px-5 bg-dark " type="text" placeholder="Enter Your Email Address">
+            <a class="btn btn-sm btn-success px-4 mx-5 me-3 my-2 py-0" href="">GO</a>
+
+        </div>
+
+        <ul class="my-4  d-flex text-decoration-none list-unstyled text-white  justify-content-between">
+            <li class="nav-item ">
+                <a class="nav-link  text-white" href=""><i class="fab fa-facebook"></i></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href=""><i class="fab fa-twitter"></i></a>
+
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link  text-white" href=""><i class="fab fa-google"></i></a>
+
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href=""><i class="fab fa-linkedin"></i></a>
+
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href=""><i class="fab fa-youtube"></i></a>
+
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href=""><i class="fab fa-instagram"></i></a>
+
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link  text-white" href=""><i class="fab fa-pinterest"></i></a>
+
+            </li>
+
+        </ul>
+
+        <small class="mb-5 ">©Copyright & Design Mahabub Hossain</small>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
