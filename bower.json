@@ -1,0 +1,11 @@
+{
+  "name": "BDTRAVEL BLOG By Boostrap",
+  "homepage": "https://github.com/mahabub-hossain-bd/bdtravel_bootstrap",
+  "authors": [
+    "mahabub-hossain-bd <palashmahabub@gmail.com>"
+  ],
+  "description": "Make this website only practise bootstrap",
+  "main": "",
+  "license": "MIT",
+  "private": true
+}
