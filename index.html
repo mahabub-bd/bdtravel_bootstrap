@@ -1,843 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Blog</title>
+
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/all.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- -----------------------Header Start-------------------- -->
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Blog</title>
-
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/all.css" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-
-  <body>
-    <!-- -----------------------Header Start-------------------- -->
-
-    <head>
-      <nav
-        class="
+    <nav class="
           navbar navbar-expand-lg navbar-dark
           bg-success
           fixed-top
           d-sm-inline
-        "
-      >
-        <div class="container">
-          <div class="brand d-flex align-items-center mx-auto">
-            <i class="text-white fas fa-globe fa-3x"></i>
-            <a class="navbar-brand ms-sm-5" href="index.html">BDTRAVEL</a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active mx-md-2" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-md-2" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-md-2" href="article.html">Article</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-md-2" href="">Archive</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-md-2" href="">Author</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-md-2" href="contact.html">Contact</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav me-5 float-sm-start">
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-google"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-youtube"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-instagram"></i></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href=""><i class="fab fa-pinterest"></i></a>
-              </li>
-            </ul>
-            <ul class="navbar-nav me-3">
-              <li class="nav-item">
-                <a class="nav-link mx-md-1" href=""
-                  ><i class="fa fa-search"></i
-                ></a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item d-flex align-items-center">
-                <button
-                  class="nav-btn btn btn-success btn-sm border-white"
-                  data-bs-toggle="modal"
-                  data-bs-target="#login"
-                  href="login.html"
-                >
-                  Login
-                </button>
-              </li>
-            </ul>
-          </div>
+        ">
+      <div class="container">
+        <div class="brand d-flex align-items-center mx-auto">
+          <i class="text-white fas fa-globe fa-3x"></i>
+          <a class="navbar-brand ms-sm-5" href="index.html">BDTRAVEL</a>
         </div>
-      </nav>
-    </head>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active mx-md-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-md-2" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-md-2" href="article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-md-2" href="">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-md-2" href="">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-md-2" href="contact.html">Contact</a>
+            </li>
+          </ul>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="login"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title mx-auto" id="exampleModalToggleLabel">
-              Login to BDTRAVEL
-            </h5>
+          <ul class="navbar-nav me-5 float-sm-start">
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-google"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-instagram"></i></a>
+            </li>
 
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-5">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control form-control-sm"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control form-control-sm"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label ms-3 me-5" for="exampleCheck1"
-                  >Check me out</label
-                >
-
-                <a
-                  class="ps-5 link-success"
-                  href=""
-                  data-bs-target="#forgetpassword"
-                  data-bs-toggle="modal"
-                  data-bs-dismiss="modal"
-                  >Forget Password</a
-                >
-              </div>
-              <button type="submit" class="btn btn-sm btn-success">
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fab fa-pinterest"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link mx-md-1" href=""><i class="fa fa-search"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item d-flex align-items-center">
+              <button class="nav-btn btn btn-success btn-sm border-white" data-bs-toggle="modal" data-bs-target="#login"
+                href="login.html">
                 Login
               </button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-sm btn-success"
-              data-bs-target="#signup"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              Sign Up
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <!-- Modal -->
+  <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mx-auto" id="exampleModalToggleLabel">
+            Login to BDTRAVEL
+          </h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label ms-3 me-5" for="exampleCheck1">Check me out</label>
+
+              <a class="ps-5 link-success" href="" data-bs-target="#forgetpassword" data-bs-toggle="modal"
+                data-bs-dismiss="modal">Forget Password</a>
+            </div>
+            <button type="submit" class="btn btn-sm btn-success">
+              Login
             </button>
-          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-sm btn-success" data-bs-target="#signup" data-bs-toggle="modal"
+            data-bs-dismiss="modal">
+            Sign Up
+          </button>
         </div>
       </div>
     </div>
-    <div
-      class="modal fade"
-      id="signup"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel2"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">
-              Sign Up to BDTRAVEL
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-5">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control form-control-sm"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
+  </div>
+  <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">
+            Sign Up to BDTRAVEL
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
               </div>
-              <div class="mb-3">
-                <label for="exampleInputphone1" class="form-label"
-                  >Mobile Number</label
-                >
-                <input
-                  type="tel"
-                  class="form-control form-control-sm"
-                  id="exampleInputphone1"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1 " class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control form-control-sm"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">
-                  Retype Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control form-control-sm"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >I Agree To The Terms & Condition</label
-                >
-              </div>
-              <button type="submit" class="btn btn-sm btn-success">Join</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-success btn-sm"
-              data-bs-target="#login"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              Back to Login
-            </button>
-          </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputphone1" class="form-label">Mobile Number</label>
+              <input type="tel" class="form-control form-control-sm" id="exampleInputphone1" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1 " class="form-label">Password</label>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">
+                Retype Password</label>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">I Agree To The Terms & Condition</label>
+            </div>
+            <button type="submit" class="btn btn-sm btn-success">Join</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-sm" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">
+            Back to Login
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Forget Password -->
+  <!-- Forget Password -->
 
-    <div
-      class="modal fade"
-      id="forgetpassword"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel2"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">
+  <div class="modal fade" id="forgetpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">
+            Reset Password
+          </h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <h6>Enter your email and a reset link will be sent you</h6>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-sm btn-success">
               Reset Password
-            </h5>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-5">
-            <h6>Enter your email and a reset link will be sent you</h6>
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control form-control-sm"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-
-              <button type="submit" class="btn btn-sm btn-success">
-                Reset Password
-              </button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-success btn-sm"
-              data-bs-target="#login"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              Back to Login
             </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-sm" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">
+            Back to Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------Header End-------------------- -->
+
+  <section class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="width: 100%; height: 500px" !important;>
+        <div class="carousel-item active">
+          <img src="images/carosel1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/image005.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/image001.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/william-thomas-ny6tO4ItOEY-unsplash.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- Travel Card -->
+  <div class="container border-bottom-1 border-success pb-3">
+    <div class="row mb-3 border-dark border-bottom">
+      <div class="col-md-6 col-lg-4">
+        <div class="travel-item">
+          <div class="circle-container bg-success">
+            <img src="images/tour.svg" alt="" />
+          </div>
+          <div class="travel-item-title">
+            <h3>50 Places Visit</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="travel-item">
+          <div class="circle-container bg-success">
+            <img src="images/Vector.svg" alt="" />
+          </div>
+          <div class="travel-item-title">
+            <h3>Travel Tips</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="travel-item">
+          <div class="circle-container bg-success">
+            <img src="images/Vector2.svg" alt="" />
+          </div>
+          <div class="travel-item-title">
+            <h3>8 Division Visit</h3>
           </div>
         </div>
       </div>
     </div>
-    <!-- -----------------------Header End-------------------- -->
+  </div>
 
-    <section class="container">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div
-          class="carousel-inner"
-          style="width: 100%; height: 500px"
-          !important;
-        >
-          <div class="carousel-item active">
-            <img src="images/carosel1.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="images/image005.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="images/image001.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/william-thomas-ny6tO4ItOEY-unsplash.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <!-- Travel Card -->
-    <div class="container border-bottom-1 border-success pb-3">
-      <div class="row mb-3 border-dark border-bottom">
-        <div class="col-md-6 col-lg-4">
-          <div class="travel-item">
-            <div class="circle-container bg-success">
-              <img src="images/tour.svg" alt="" />
-            </div>
-            <div class="travel-item-title">
-              <h3>50 Places Visit</h3>
-            </div>
-          </div>
-        </div>
+  <!-- Travel  -->
 
-        <div class="col-md-6 col-lg-4">
-          <div class="travel-item">
-            <div class="circle-container bg-success">
-              <img src="images/Vector.svg" alt="" />
-            </div>
-            <div class="travel-item-title">
-              <h3>Travel Tips</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="travel-item">
-            <div class="circle-container bg-success">
-              <img src="images/Vector2.svg" alt="" />
-            </div>
-            <div class="travel-item-title">
-              <h3>8 Division Visit</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="popular-post container animate__animated animate__slideInLeft">
+    <div class="title text-center border-bottom-3 border-success mt-3">
+      <h3 class="">Popular Post</h3>
     </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Popular-image-1.jpg" alt="" />
 
-    <!-- Travel  -->
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-    <div class="popular-post container">
-      <div class="title text-center border-bottom-3 border-success mt-3">
-        <h3 class="">Popular Post</h3>
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+
+          <div class="
+                card-footer
+                d-flex
+                align-items-center
+                justify-content-between
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Popular-image-1.jpg"
-              alt=""
-            />
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Popular-image-2.jpg" alt="" />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-
-            <div
-              class="
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Popular-image-2.jpg"
-              alt=""
-            />
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Popular-image-3.jpg" alt="" />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
-                card-footer
-                d-flex
-                align-items-center
-                justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
-            </div>
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Popular-image-3.jpg"
-              alt=""
-            />
-
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
-
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Popular post End -->
-    <!-- Feature post  start -->
+  <!-- Popular post End -->
+  <!-- Feature post  start -->
 
-    <div class="popular-post container">
-      <div class="title text-center border-bottom-3 border-success my-5">
-        <h3 class="">Feature Post</h3>
+  <div class="popular-post container animate__animated animate__slideInRight">
+    <div class="title text-center border-bottom-3 border-success my-5">
+      <h3 class="">Feature Post</h3>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Featured-image-1.jpg" alt="" />
+
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+          <div class="
+                card-footer
+                d-flex
+                align-items-center
+                justify-content-between
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Featured-image-1.jpg"
-              alt=""
-            />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Featured-image-2.jpg" alt="" />
 
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Featured-image-3.jpg" alt="" />
 
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Featured-image-2.jpg"
-              alt=""
-            />
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
-
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
-                card-footer
-                d-flex
-                align-items-center
-                justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
-            </div>
+            <p class="card-text text-muted">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Featured-image-3.jpg"
-              alt=""
-            />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
-
-              <p class="card-text text-muted">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-
-            <div
-              class="
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Recent post Start -->
+  <!-- Recent post Start -->
 
-    <div class="popular-post container">
-      <div class="title text-center border-bottom-3 border-success my-5">
-        <h3>Recent Post</h3>
+  <div class="popular-post container animate__animated animate__slideInLeft">
+    <div class="title text-center border-bottom-3 border-success my-5">
+      <h3>Recent Post</h3>
+    </div>
+    <div class="post-item row card-deck">
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Recent-Image-1.jpg" alt="" />
+
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+          <div class="
+                card-footer
+                d-flex
+                align-items-center
+                justify-content-between
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="post-item row card-deck">
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Recent-Image-1.jpg"
-              alt=""
-            />
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Recent-Image-2.jpg" alt="" />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
+            <p class="card-text">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
+          </div>
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Recent-Image-2.jpg"
-              alt=""
-            />
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card">
+          <img class="card-image-top" src="images/Recent-Image-3.jpg" alt="" />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
+          <div class="card-body">
+            <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
 
-              <p class="card-text">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-            <div
-              class="
-                card-footer
-                d-flex
-                align-items-center
-                justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
-            </div>
+            <p class="card-text text-muted">
+              Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
+              Ac
+            </p>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 col-lg-4">
-          <div class="card">
-            <img
-              class="card-image-top"
-              src="images/Recent-Image-3.jpg"
-              alt=""
-            />
 
-            <div class="card-body">
-              <h5 class="card-title">Scelerisque posuere neque, etiam</h5>
-
-              <p class="card-text text-muted">
-                Urna aliquet lorem sed quam ipsum, mi, consequat, amet, tellus.
-                Ac
-              </p>
-            </div>
-
-            <div
-              class="
+          <div class="
                 card-footer
                 d-flex
                 align-items-center
                 justify-content-between
-              "
-            >
-              <div>
-                <i class="far fa-comment"></i>
-                <small class="ms-2">3 Comments</small>
-              </div>
-              <div>
-                <i class="far fa-folder ml-5"></i>
-                <small class="ms-2">Blog</small>
-              </div>
+              ">
+            <div>
+              <i class="far fa-comment"></i>
+              <small class="ms-2">3 Comments</small>
+            </div>
+            <div>
+              <i class="far fa-folder ml-5"></i>
+              <small class="ms-2">Blog</small>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Recent Post End -->
+  <!-- Recent Post End -->
 
-    <!-- Subscriber -->
+  <!-- Subscriber -->
 
-    <div class="container-fluid bg-success my-5">
-      <h2 class="text-center text-white py-3 my-3">SEE MORE ON THE BLOG</h2>
-    </div>
-    <div class="container my-2">
-      <div class="row">
-        <div class="col-md-6 py-5">
-          <h1 class="page-header text-center text-muted">NEWSLETTER SIGNUP</h1>
-          <div
-            class="
+  <div class="container-fluid bg-success my-5">
+    <h2 class="text-center text-white py-3 my-3">SEE MORE ON THE BLOG</h2>
+  </div>
+  <div class="container my-2">
+    <div class="row">
+      <div class="col-md-6 py-5">
+        <h1 class="page-header text-center text-muted">NEWSLETTER SIGNUP</h1>
+        <div class="
               input
               border border-1 border-dark-50
               rounded
@@ -846,53 +632,40 @@
               align-items-center
               mt-5
               py-2
-            "
-          >
-            <div>
-              <input
-                class="border border-0"
-                type="text"
-                placeholder="Enter Your Email Address"
-              />
-            </div>
-
-            <div><a class="btn btn-sm btn-success" href="">SUBSCRIBE</a></div>
+            ">
+          <div>
+            <input class="border border-0" type="text" placeholder="Enter Your Email Address" />
           </div>
 
-          <div class="form-check my-4">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck1"
-            />
-            <label class="form-check-label text-black-50" for="defaultCheck1">
-              ACCEPT TERMS & CONDITION
-            </label>
-          </div>
+          <div><a class="btn btn-sm btn-success" href="">SUBSCRIBE</a></div>
         </div>
-        <div class="col-md-6">
-          <img class="img-fluid" src="images/newsletter.jpg" alt="" />
+
+        <div class="form-check my-4">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+          <label class="form-check-label text-black-50" for="defaultCheck1">
+            ACCEPT TERMS & CONDITION
+          </label>
         </div>
       </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="images/newsletter.jpg" alt="" />
+      </div>
     </div>
+  </div>
 
-    <!--  -->
+  <!--  -->
 
-    <!-- Footer Start -->
+  <!-- Footer Start -->
 
-    <div
-      class="
+  <div class="
         container-fluid
         bg-dark
         d-flex
         flex-column
         align-items-center
         text-white
-      "
-    >
-      <div
-        class="
+      ">
+    <div class="
           brand
           d-inline-flex
           align-items-center
@@ -900,89 +673,65 @@
           mx-auto
           p-2
           my-4
-        "
-      >
-        <i class="text-white fas fa-globe fa-3x"></i>
-        <a class="navbar-brand ms-5 text-white" href="#">BDTRAVEL</a>
-      </div>
-      <p>Subscribe to our newsletter</p>
+        ">
+      <i class="text-white fas fa-globe fa-3x"></i>
+      <a class="navbar-brand ms-5 text-white" href="#">BDTRAVEL</a>
+    </div>
+    <p>Subscribe to our newsletter</p>
 
-      <div
-        class="
+    <div class="
           input
           border border-1 border-white
           rounded
           d-flex
           justify-content-between
           align-items-center
-        "
-      >
-        <input
-          class="border-0 px-5 bg-dark text-white"
-          type="text"
-          placeholder="Enter Your Email Address"
-        />
-        <a class="btn btn-sm btn-success px-4 mx-5 me-3 my-2 py-0" href=""
-          >GO</a
-        >
-      </div>
+        ">
+      <input class="border-0 px-5 bg-dark text-white" type="text" placeholder="Enter Your Email Address" />
+      <a class="btn btn-sm btn-success px-4 mx-5 me-3 my-2 py-0" href="">GO</a>
+    </div>
 
-      <ul
-        class="
+    <ul class="
           my-4
           d-flex
           text-decoration-none
           list-unstyled
           text-white
           justify-content-between
-        "
-      >
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-google"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
+        ">
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-google"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-youtube"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-instagram"></i></a>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-white" href=""
-            ><i class="fab fa-pinterest"></i
-          ></a>
-        </li>
-      </ul>
+      <li class="nav-item">
+        <a class="nav-link text-white" href=""><i class="fab fa-pinterest"></i></a>
+      </li>
+    </ul>
 
-      <small class="mb-5">©Copyright & Design Mahabub Hossain</small>
-    </div>
+    <small class="mb-5">©Copyright & Design Mahabub Hossain</small>
+  </div>
 
-    <!-- Footer End -->
+  <!-- Footer End -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/all.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
