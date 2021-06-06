@@ -78,15 +78,17 @@ body {
   position: absolute;
 }
 
-input{
+input {
   outline: none;
   border: none;
-  
 }
-.page-title-bar{font-size:32px;
-
+.page-title-bar {
+  font-size: 32px;
 }
-.fa-home,.fa-greater-than{font-weight: 100;}
+.fa-home,
+.fa-greater-than {
+  font-weight: 100;
+}
 
 /* Blog Page CSS */
 .title-sidebar {
@@ -114,8 +116,22 @@ input{
   position: absolute;
 }
 
+/* iframe Responsive */
 
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top:  5%;
+}
 
-
-
-
+.Responsive_Iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
